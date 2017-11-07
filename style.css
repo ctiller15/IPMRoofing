@@ -1,0 +1,99 @@
+.banner{
+	background-image: url('./images/banner.jpg');
+	background-size: cover;
+	height: 200px;
+	box-sizing: border-box;
+	padding: 5%;
+}
+
+.banner hr{
+	margin-left: 0;
+	width: 50%;
+}
+
+.col-sm-4 img{
+	display: block;
+	width: 50%;
+	border: 6px solid black;
+	border-radius: 999px;
+	margin: 0 auto;
+}
+
+.col-sm-4.roof{
+	height: 300px;
+	background-size: cover;
+}
+
+.roof1{
+	background-image: url('./images/roof_images/orlova-maria-379607.jpg');
+}
+
+.roof2{
+	background-image: url('./images/roof_images/robert-anitei-434937.jpg');
+}
+
+.roof3{
+	background-image: url('./images/roof_images/chuttersnap-387757.jpg');
+}
+
+.roof4{
+	background-image: url('./images/roof_images/fernando-reyes-241690.jpg');
+}
+
+.roof5{
+	background-image: url('./images/roof_images/samuel-zeller-4134.jpg');
+}
+
+.roof6{
+	background-image: url('./images/roof_images/zhipeng-ya-345515.jpg');
+}
+
+.roof7{
+	background-image: url('./images/roof_images/echo-grid-173316.jpg');
+}
+
+.roof8{
+	background-image: url('./images/roof_images/samuel-zeller-4136.jpg');
+}
+
+.roof9{
+	background-image: url('./images/roof_images/roofing.jpg');
+}
+
+.roof10{
+	background-image: url('./images/roof_images/dan-gold-139602.jpg');
+}
+
+.contact .col-sm-6 p{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.contact .col-sm-6 .phone, .contact .col-sm-6 .email{
+	margin-bottom: 5%;
+}
+
+span img{
+	width: 20%;
+	height: auto;
+}
+
+.hours p{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.location{
+	display: block;
+	margin: 0 auto;
+}
+
+div .location .address {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
