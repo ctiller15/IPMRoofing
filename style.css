@@ -12,6 +12,8 @@ body{
 	height: 200px;
 	box-sizing: border-box;
 	padding: 5%;
+	color: white;
+	text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;
 }
 
 .banner hr{
@@ -19,17 +21,62 @@ body{
 	width: 50%;
 }
 
+.navbar{
+	display: flex;
+	justify-content: space-around;
+	background: black;
+	box-sizing: border-box;
+	padding: 5%;
+}
+
+.navbar a{
+	color: white;
+}
+
+h2 + hr{
+	width: 50%;
+	margin: 0 auto 5%;
+	display: block;
+}
+
+.about p{
+	font-size: 1.3em;
+}
+
+h3{
+	font-size: 2.5em;
+}
+
 .col-sm-4 img{
 	display: block;
 	width: 50%;
 	border: 6px solid black;
 	border-radius: 999px;
+	margin: 0 auto 5%;
+}
+
+.col-sm-4 p{
+	font-size: 1.2em;
+	width: 80%;
 	margin: 0 auto;
+	display: block;
 }
 
 .col-sm-4.roof{
 	height: 300px;
 	background-size: cover;
+}
+
+.col-sm-4.roof h4{
+	display: block;
+	position: relative;
+	top: 30%;
+	left: 10%;
+	width: 60%;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;
 }
 
 .roof1{
@@ -104,18 +151,34 @@ div .status {
 	margin: 5% 0;
 }
 
+.col-sm-6{
+	margin-bottom: 10%;
+}
+
 div div.col-sm-6 div.status p{
 	display: flex;
-	justify-content: space-around;	
+	justify-content: space-around;
+	font-size: 1.5em;
 }
 
 div .location .address {
 	display: block;
 	text-align: center;
 	margin: 5% auto;
+	font-size: 1.5em;
 }
 
 iframe{
 	width: 100%;
 	height: 300px;
+}
+
+footer{
+	box-sizing: border-box;
+	padding: 5%;
+	background: black;
+	color: white;
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	margin-bottom: 0;
 }
