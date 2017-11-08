@@ -88,7 +88,7 @@ h3{
 }
 
 .roof3{
-	background-image: url('./images/roof_images/chuttersnap-387757.jpg');
+	background-image: url('./images/roof_images/chuttersnap-387757-comp.jpg');
 }
 
 .roof4{
@@ -96,19 +96,19 @@ h3{
 }
 
 .roof5{
-	background-image: url('./images/roof_images/samuel-zeller-4134.jpg');
+	background-image: url('./images/roof_images/samuel-zeller-4134-comp.jpg');
 }
 
 .roof6{
-	background-image: url('./images/roof_images/zhipeng-ya-345515.jpg');
+	background-image: url('./images/roof_images/zhipeng-ya-345515-comp.jpg');
 }
 
 .roof7{
-	background-image: url('./images/roof_images/echo-grid-173316.jpg');
+	background-image: url('./images/roof_images/echo-grid-173316-comp.jpg');
 }
 
 .roof8{
-	background-image: url('./images/roof_images/samuel-zeller-4136.jpg');
+	background-image: url('./images/roof_images/samuel-zeller-4136-comp.jpg');
 }
 
 .roof9{
@@ -116,7 +116,7 @@ h3{
 }
 
 .roof10{
-	background-image: url('./images/roof_images/dan-gold-139602.jpg');
+	background-image: url('./images/roof_images/dan-gold-139602-comp.jpg');
 }
 
 .contact .col-sm-6 p{
@@ -181,4 +181,21 @@ footer{
 	width: 100vw;
 	margin-left: calc(-50vw + 50%);
 	margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px){
+	.about .row{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.col-sm-4.roof{
+		width: 30%;
+		margin: 1.666667%;
+	}
+
+	.contact .col-sm-6 .phone, .contact .col-sm-6 .email{
+		margin: 5%;
+	}
 }
