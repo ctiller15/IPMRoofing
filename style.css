@@ -1,10 +1,21 @@
+
+
 html{
 	height: 100%;
 	overflow-x: hidden;
+	--base-color: #72441E;
+	--accent-color: #124444;
+	background-color: var(--base-color);
 }
 
 body{
-	height: 100%;
+	/*height: 100%;*/
+	background-color: var(--base-color);
+}
+
+.container{
+	width: 90%;
+	background-color: white;
 }
 
 .banner{
@@ -20,6 +31,10 @@ body{
 .banner hr{
 	margin-left: 0;
 	width: 50%;
+}
+
+.banner p{
+	font-style: italic;
 }
 
 .navbar{
@@ -81,35 +96,35 @@ h3{
 }
 
 .roof1{
-	background-image: url('./images/roof_images/orlova-maria-379607.jpg');
+	background-image: url('./images/roof_images/orlova-maria-379607-comp-min.jpg');
 }
 
 .roof2{
-	background-image: url('./images/roof_images/robert-anitei-434937.jpg');
+	background-image: url('./images/roof_images/robert-anitei-434937-comp-min.jpg');
 }
 
 .roof3{
-	background-image: url('./images/roof_images/chuttersnap-387757-comp.jpg');
+	background-image: url('./images/roof_images/chuttersnap-387757-comp-min.jpg');
 }
 
 .roof4{
-	background-image: url('./images/roof_images/fernando-reyes-241690.jpg');
+	background-image: url('./images/roof_images/fernando-reyes-241690-comp-min.jpg');
 }
 
 .roof5{
-	background-image: url('./images/roof_images/samuel-zeller-4134-comp.jpg');
+	background-image: url('./images/roof_images/samuel-zeller-4134-comp-min.jpg');
 }
 
 .roof6{
-	background-image: url('./images/roof_images/zhipeng-ya-345515-comp.jpg');
+	background-image: url('./images/roof_images/zhipeng-ya-345515-comp-min.jpg');
 }
 
 .roof7{
-	background-image: url('./images/roof_images/echo-grid-173316-comp.jpg');
+	background-image: url('./images/roof_images/echo-grid-173316-comp-min.jpg');
 }
 
 .roof8{
-	background-image: url('./images/roof_images/samuel-zeller-4136-comp.jpg');
+	background-image: url('./images/roof_images/samuel-zeller-4136-comp-min.jpg');
 }
 
 .roof9{
@@ -117,7 +132,7 @@ h3{
 }
 
 .roof10{
-	background-image: url('./images/roof_images/dan-gold-139602-comp.jpg');
+	background-image: url('./images/roof_images/dan-gold-139602-comp-min.jpg');
 }
 
 .contact .col-sm-6 p{
