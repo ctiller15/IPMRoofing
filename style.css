@@ -5,12 +5,16 @@ html{
 	overflow-x: hidden;
 	--base-color: #72441E;
 	--accent-color: #124444;
+	--light-gray: #efece9;
+	--dark-gray: #46423f;
+
 	background-color: var(--base-color);
 }
 
 body{
 	/*height: 100%;*/
 	background-color: var(--base-color);
+	color: var(--dark-gray);
 }
 
 .container{
@@ -25,7 +29,7 @@ body{
 	box-sizing: border-box;
 	padding: 5%;
 	color: white;
-	text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;
+	text-shadow: 1px 1px 1px var(--dark-gray), 1px -1px 1px var(--dark-gray), -1px 1px 1px var(--dark-gray), -1px -1px 1px var(--dark-gray);
 }
 
 .banner hr{
@@ -40,13 +44,30 @@ body{
 .navbar{
 	display: flex;
 	justify-content: space-around;
-	background: black;
+	align-items: stretch;
+	background: var(--dark-gray);
 	box-sizing: border-box;
-	padding: 5%;
+	/*padding: 5%;*/
 }
 
 .navbar a{
-	color: white;
+	color: var(--light-gray);
+	width: 30%;
+	text-align: center;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar button{
+	height: 100%;
+}
+
+.navbar a:hover{
+	background-color: var(--light-gray);
+	color: var(--dark-gray);
+	text-decoration: none;
 }
 
 h2 + hr{
@@ -66,14 +87,14 @@ h3{
 .col-sm-4 svg, .col-sm-4 img{
 	display: block;
 	width: 50%;
-	border: 6px solid black;
+	border: 6px solid var(--accent-color);
 	border-radius: 999px;
 	margin: 0 auto 5%;
 	/*Need to change SVG to inline SVG*/
 }
 
 .svg{
-	fill: red;
+	fill: var(--accent-color);
 }
 
 .col-sm-4 p{
@@ -88,6 +109,11 @@ h3{
 	background-size: cover;
 }
 
+.col-sm-4.roof:hover{
+	filter: opacity(70%);
+	cursor: pointer;
+}
+
 .col-sm-4.roof h4{
 	display: block;
 	position: relative;
@@ -96,8 +122,8 @@ h3{
 	width: 60%;
 	font-size: 2em;
 	font-weight: bold;
-	color: white;
-	text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;
+	color: var(--light-gray);
+	text-shadow: 1px 1px 1px var(--dark-gray), 1px -1px 1px var(--dark-gray), -1px 1px 1px var(--dark-gray), -1px -1px 1px var(--dark-gray);
 }
 
 .roof1{
@@ -139,6 +165,10 @@ h3{
 .roof10{
 	background-image: url('./images/roof_images/dan-gold-139602-comp-min.jpg');
 }
+
+/*.contact .col-sm-6{
+	border: 1px solid black;
+}*/
 
 .contact .col-sm-6 p{
 	display: flex;
@@ -197,11 +227,18 @@ iframe{
 footer{
 	box-sizing: border-box;
 	padding: 5%;
-	background: black;
-	color: white;
+	background: var(--dark-gray);
+	color: var(--light-gray);
 	width: 100vw;
 	margin-left: calc(-50vw + 50%);
 	margin-bottom: 0;
+}
+
+footer > a{
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
 }
 
 @media screen and (min-width: 768px){
@@ -266,12 +303,20 @@ footer{
 		margin: 1.666667%;
 	}
 
+	.well{
+		background: var(--light-gray);
+	}
+
 	.contact h2{
 		font-size: 3em;
 	}
 
 	.contact p{
 		font-size: 1.3em;
+	}
+
+	.contact .svg{
+		fill: var(--dark-gray);
 	}
 
 	.contact .col-sm-6 .phone, .contact .col-sm-6 .email{
@@ -290,4 +335,32 @@ footer{
 	div div.col-sm-6 div.status p{
 		font-size: 1.7em;
 	}
+}
+
+@media screen and (min-width: 1024px){
+	.navbar{
+		padding: 0 1%;
+	}
+
+	.navbar a{
+		transition: background-color .25s;
+	}
+
+	.col-sm-4.roof{
+		transition: filter .3s;
+	}
+
+	.contact p{
+		font-size: 1.5em;
+	}
+
+	.location p.address{
+		font-size: 2.1em;
+	}
+
+	footer{
+		padding: 2%;
+	}
+
+
 }
