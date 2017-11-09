@@ -1,7 +1,7 @@
     /*
      * Replace all SVG images with inline SVG
      */
-        $('img.icon').each(function(){
+        $('.svg').each(function(){
             var $img = jQuery(this);
             var imgID = $img.attr('id');
             var imgClass = $img.attr('class');
