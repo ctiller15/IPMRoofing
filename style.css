@@ -28,8 +28,11 @@ body{
 	height: 200px;
 	box-sizing: border-box;
 	padding: 5%;
-	color: white;
-	text-shadow: 1px 1px 1px var(--dark-gray), 1px -1px 1px var(--dark-gray), -1px 1px 1px var(--dark-gray), -1px -1px 1px var(--dark-gray);
+	color: var(--light-gray);
+	text-shadow: 1px 1px 1px var(--dark-gray),
+	 			1px -1px 1px var(--dark-gray),
+	 			-1px 1px 1px var(--dark-gray),
+	 			-1px -1px 1px var(--dark-gray);
 }
 
 .banner hr{
@@ -124,6 +127,27 @@ h3{
 	font-weight: bold;
 	color: var(--light-gray);
 	text-shadow: 1px 1px 1px var(--dark-gray), 1px -1px 1px var(--dark-gray), -1px 1px 1px var(--dark-gray), -1px -1px 1px var(--dark-gray);
+	transition: transform .5s;
+}
+
+.col-sm-4.roof h4.animated_header{
+	transform: translate(-20%, -80%) scale(.75);
+}
+
+.col-sm-4.roof p{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	color: var(--light-gray);
+	text-shadow: 1px 1px 1px var(--dark-gray), 1px -1px 1px var(--dark-gray), -1px 1px 1px var(--dark-gray), -1px -1px 1px var(--dark-gray);
+	opacity: 0;
+	transform: translate(0, 100%);
+	transition: transform .5s, opacity .5s;
+}
+
+.col-sm-4.roof p.animated_text{
+	opacity: 1;
+	transform: translate(0, 0);
 }
 
 .roof1{
@@ -303,6 +327,12 @@ footer > a{
 		margin: 1.666667%;
 	}
 
+	.col-sm-4.roof p{
+		font-size: 1em;
+		transition: transform .3s, opacity ease-in .5s;
+	}
+
+
 	.well{
 		background: var(--light-gray);
 	}
@@ -348,6 +378,11 @@ footer > a{
 
 	.col-sm-4.roof{
 		transition: filter .3s;
+	}
+
+	.col-sm-4.roof p{
+		font-size: 1em;
+		transition: transform .3s, opacity .3s;
 	}
 
 	.contact p{
