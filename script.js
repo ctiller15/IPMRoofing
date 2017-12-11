@@ -32,16 +32,10 @@ $('.svg').each(function(){
 
 var roofHeaders = document.querySelectorAll(".roof h4");
 var roofTexts = document.querySelectorAll(".roof p");
-console.log(roofHeaders);
-console.log(roofTexts);
 
 document.querySelectorAll(".roof").forEach((item, index) => {
     item.addEventListener("click", (e) => {
-        console.log(e.target);
-        console.log(item);
-        console.log(roofHeaders[index]);
         roofHeaders[index].classList.toggle("animated_header");
-        console.log(roofTexts[index]);
         roofTexts[index].classList.toggle("animated_text");
     });
 });
