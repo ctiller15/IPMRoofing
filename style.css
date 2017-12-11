@@ -205,6 +205,10 @@ h3{
 	margin-bottom: 5%;
 }
 
+.contact .well span{
+	width: 20px;
+}
+
 span svg{
 	width: 20px;
 	height: auto;
@@ -351,6 +355,10 @@ footer > a{
 
 	.contact .col-sm-6 .phone, .contact .col-sm-6 .email{
 		margin: 5%;
+	}
+
+	.contact .well span{
+		width: 30px;
 	}
 
 	span svg{
